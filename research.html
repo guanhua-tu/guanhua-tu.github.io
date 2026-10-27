@@ -1,0 +1,273 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guan-Hua (Scott) Tu</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<!--outerWrapper start-->
+<div id="outerWrapper">
+
+
+<a name="Top" id="Top"></a>
+
+
+<!--fixedMenu start-->
+<div id="showMenuButton">
+
+<span class="line"></span>
+<span class="line"></span>
+<span class="line"></span>
+
+	<div id="fixedMenu">
+		<ul>
+			<li><a href="index.html#Research">Home</a></li>				
+		</ul>
+	</div>
+	
+</div>
+<!--fixedMenu end-->
+
+
+<!--header start -->
+<div id="headerMain">
+<!--
+<div id="header">
+  <h1>UCLA</h1>
+
+</div>-->
+<div id="navbar">
+<ul class="nav">
+<li><a class="selected" href="index.html">Home</a></li>
+<!-- <li><a href="project.htm">Projects</a></li> -->
+</ul>
+</div>
+
+</div>
+<!--header end -->
+
+
+
+
+
+
+<!--bodyTopMain start -->
+<div id="bodyTopMain">
+<!--left1 start -->
+<div id="left1">
+<img src="mypics/Tu_GuanHua_2.jpg" height="200" />
+<a name="Guan-Hua" id="Guan-Hua"></a>
+<h2>Guan-Hua (Scott) Tu </h2>
+Assistant Professor
+<p>
+<!--<b>Postdoctoral Scholar</b><br/> -->
+<a href="http://www.cse.msu.edu">Department of Computer Science and Engineering</a>,<br/>
+<a href="http://www.msu.edu">Michigan State University</a><br/>
+428 S SHAW LN, ROOM 3115<br/>
+East Lansing, MI 48824-1266<br/>
+Email: ghtu AT msu.edu<br/>
+Office: 2507B Engineering Building<br/>
+<!--<font color="red">I am on the faculty job market now.</font> <br/>
+<font color="red">My application materials are  <a href="application-materials">here</a>.</font> 
+-->
+</p>
+
+
+</div>
+<!--left1 end -->
+
+</div>
+<!--bodyTopMain end -->
+
+
+
+
+
+
+<!--bodyTopMain end -->
+<!--bodyBotMain start -->
+<div id="bodyBotMain">
+
+
+<!--left2 start -->
+<div id="left2">
+
+
+
+<h2>Research Experience</h2>
+<ul>
+  <a name="CNetVerifer" id="CNetVerifer"></a>
+    <li><b>CNetVerifer: An Automated, Extensible Control-Plane Protocol Verification Tool</b> [SIGCOMM'14, IEEE/ACM ToN'15]
+  </li>
+  <p>
+  <!--The control-plane protocols in cellular
+	networks communicate with each other, and provide a rich set of control functions vital to cellular networks over
+	three dimensions, cross-layers, cross-domains (circuit-switched and packet-switched), and cross-systems (3G and
+	4G). Despite their significance, the problem of verifying protocol correctness remains largely unaddressed due to
+	its complex interaction patterns and inaccessibility of cellular network infrastructure. </br> </br>-->
+
+	We developed <i>CNetVerifier</i>, an <b>automated control-plane protocol verification tool with domain-specific heuristics and model checking techniques</b>, to systematically explore possible problematic interact<input type="hidden" >ions in cellular networks.
+	The main advantage of this methodology is that the exploration of control plane protocol interactions will not be restricted by the unlimited possible use scenarios (it is time consuming to explore all of them by empirical approaches). 
+	Its impact on the wireless/mobile networking technology and cybersecurity can be considered as far-reaching. <font color="red"><b>It does not only capture the fundamental design issues of mobile networks span over multiple dimensions, but also discover the security loopholes caused by improper designs of control-plane protocols of mobile networks.</b></font> The lessons we learned can be even applied to the next big things (e.g., 5G, Internet of Things, Device-to-Device communication) in the area of networking.
+	</br></br>
+	<!--We thus received interests from both of academia and industry for the follow-up work. The <b>National Science Foundation (NSF) also funded us to improve CNetVerifier</b> to support more mobile network protocols and services (<font color="red"><b>Award number: CNS-1423576</b></font>).-->
+  </p>
+  
+  
+    <ul class="subitem">
+  	<li>CNetVerifier Overview</li>
+  		<img src="mypics/CNetVerifier.jpg" width="650" />
+	</ul>
+	
+	<a name="Voice" id="Voice"></a>
+  <li>
+  <b>New Security Threats Toward Data Service by Exploiting Control Plane of Voice Services [MOBICOM'13, CCS'15, CNS'15]</b> 
+  </li>
+  <p>
+  	There are two voice solutions for 4G LTE users: CSFB (Circuit-Switched FallBack) and VoLTE (Voice Over LTE). 
+  	Our study shows that both of them introduce new security threats toward individuals or carrier networks due to their improper control-plane designs.
+	  </br></br>
+    For <b>CSFB</b>, its control plane is designed to switch 4G users back to 2G/3G to access CS voice service. 
+    If 4G users refuse the inter-system switch, they cannot dial any calls or receive calls. 
+    In MOBICOM'13, we discovered that voice calls might incur the throughput drop (up to 83.4%</b>) or even the stop of data transmission for seconds, 
+    the loss of 4G connectivity, and the termination of data sessions due to its inappropriate control-plane designs. 
+   
+    In CNS'15, we demonstrated how the adversary remotely launched the <b>ping-pong attacks</b> to <b> (1)tear down all TCP connections within few minutes</b>, <b> (2)get Internet applications aborted</b>, or <b> (3)deprive users' 4G LTE connectivity</b> without their consent.
+    </br></br>
+
+    For <b>VoLTE</b>, we devised <b>four novel attacks</b>. 
+    <b>(1) Free data service attack</b>: accesses Internet at no cost in two tier-one US carrier networks. 
+    <b>(2) Data DoS attack</b>: shuts down any ongoing data service at the victim by injecting high-rate spamming traffic to the high-priority signaling bearer reserved for the control-plane signaling of VoLTE.
+    <b>(3) Overbilling attack</b>: bypasses NAT/Firewall deployed by carriers and sends many spamming packets to a victim's phone from another mobile phone. And the victim has to pay for the unsolicited packets. 
+    <b>(4) Voice muted attack</b>: makes caller and callee not to hear each other.
+      </br></br>
+  	To broaden the real-world impact of our research, <font color="red"><b>we actively cooperated with tier-one US carriers, e.g., Verizon and T-Mobile, and fixed the security loopholes we discovered. We received the positive feedback from those carriers</b></font>. 
+  	The <b>National Science Foundation (NSF) also funded us to continue the study of the security vulnerabilities of the control plane of the existing and future mobile networks. </b><!--(<font color="red"><b>Award number: CNS-1528122</b></font>)-->
+  	More detailed information and latest updates can be found in our <a href="http://peng.cse.ohio-state.edu/secvoice.html"><b>project website (UCLA-OSU cooperation research project)</b></a>.
+  </p>
+
+  
+  <ul class="subitem">
+  	<li>Ping-pong attack <u>: tears down all TCP connections in few minutes and largely downgrades UDP throughput.</u></li>
+  		<img src="mypics/CNS-attack.jpg" alt="Ping-Pong Attack" width="650" />
+  	<li>Free-data-service, data DoS, overbilling, voice muted attacks <u>: abuse VoLTE signaling bearer.</u>		
+  		<img src="mypics/CCS15-attack.jpg" alt="VoLTE Attack" width="650" />
+  		</br>
+  	<p><b>Demo 1: </b>:<a href="myfiles/free-data-service.mp4">[Free data service video]</a>   	
+        <!--<video width="780" controls><source src="myfiles/free-data-service.mp4" type="video/mp4"></video>-->
+      </br>
+      <b>Demo 2:</b><a href="myfiles/mute_voice_attack.mp4">[Voice muted attack video]</a> 
+        	          
+  	</p>
+  </li>  
+  
+	<li><b>Media report</b> </li>
+  		<a href="http://www.theverge.com/2015/10/22/9594128/volte-vulnerability-attack-verizon-att-tmobile">
+  			<img src="mypics/volte-news.png" width="750" />
+  		</a>	
+  </li>
+  	   
+	</ul>
+	
+	<a name="Charging" id="Charging"></a>
+<li><b>Accouting, Charging Issues, Security Attacks and Countermeasures on Mobile Data Networks [MOBICOM'12, CCS'12, MOBIYSY'13, CCS'14]</b>
+  </li>
+  <p>
+	The accounting of data usage is the most important functionality in the management plane of the cellular network. 
+	However, we found that <u>the control-plane and management-plane functions of the cellular network are not well designed from either charging accuracy or security aspect</u>.
+  </br></br>
+  In MOBICOM'12 and MOBISYS'13, our results yielded three counter-intuitive findings. First, users are charged for what they never receive in the extreme case. 
+  Second, users can obtain what they want in mobile data access at no cost (free of charge). Third, users have to pay for the packets dropped by carriers during user mobility. 
+  The fundamental problem is that the 3G/4G standards adopt a centralized accounting architecture.  
+  When things go wrong outside the centralized charging network elements, the resulting data volume deviates from what is observed at the end devices.
+</br></br>
+
+	In CCS'12 and CCS'14,  we discovered several security vulnerabilities along with the improper coordination between the control plane and management plane. 
+	First, the decoupling of authentication, authorization, and accounting of data service gives a great opportunity to <b><u>an attacker to send the spoofed packets (i.e., use a victim's address as the source address of the packet) to any host on Internet</u></b>, 
+	and the charging elements further charge the victim instead of the attacker. Second, <b><u>the victim cannot ask the network to stop the delivery of malicious spamming packets</u></b> unless they tear down the bearers created for data services. 
+	<!--We demonstrated that malicious attacker could freely increase the data usage of the victim.-->
+</br></br>
+
+  Our contributions are to identify new security threats to cellular systems from the charging/accounting perspective and draw more people's attentions to this important topic. 
+  <font color="red"><b>Our research results have received several media reports including MIT review, Computer World, Fiscal Times, and TheVerge</b></font>. 
+  <b>Three major US operators have adopted our approach to fix the free data service problem</b>. 
+  Our work also <b>stimulated several follow-up works</b> related to the charging/accounting of mobile networks. 
+ They were published in MOBICOM'13, IMC'14, CCS'14, NDSS'14, CCS'15, MOBICOM'15 and etc.</p>
+  
+    <ul class="subitem">
+  	<li><b>Users pay for what they never get</b> (<u>User is overcharged when signal strength is weak</u>)</li>
+  		<img src="mypics/mobicom12-overcharged.jpg" width="750" />
+  		<br>
+  		
+  		
+  	</li>	
+   	<li><b>Users pay nothing for what they get</b> (<u>Carriers do not charge DNS traffic (UDP:53) at all</u>)</li>
+  		<img src="mypics/mobicom12-free.jpg" width="750" />
+  	</li>	
+    	<!--<li>We pay for mobility (Pay for the packets dropped by carriers during mobility on 13 routes)</li>
+  		<img src="mypics/mobisys13-mobility.jpg" width="550" />-->
+	  
+		<li><b>Media report</b> </li>
+			<a href="http://www.theverge.com/2012/9/20/3361904/wireless-data-carrier-overcharging-ucla-study">
+  		<img src="mypics/mobicom12-news.jpg" width="750" />
+  	</a>
+  	
+  	</li>	  		
+  	</li>	
+	</ul>
+ 
+	
+ 
+
+  </ul>
+
+
+
+</div>
+<!--left2 end -->
+</div>
+<!--bodyBotMain end -->
+
+
+<!--footer start -->
+<div id="footerMain">
+  <div id="footer">
+    <p class="copyright">2015 &copy;Guan-Hua (Scott). All rights reserved.</p>
+  </div>
+  <div id="footernav">
+	<ul>
+	<li><a href="index.html#Top">Top</a></li>
+	</ul>
+	
+  </div>
+</div>
+
+
+
+<!--footer end -->
+
+
+
+
+<!--outerWrapper end-->
+</div>
+
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=9830066; 
+var sc_invisible=0; 
+var sc_security="424cde23"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="web stats"
+href="http://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="http://c.statcounter.com/9830066/0/424cde23/0/"
+alt="web stats"></a></div></noscript>
+</body>
+</html>

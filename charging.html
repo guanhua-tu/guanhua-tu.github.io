@@ -1,0 +1,209 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guan-Hua (Scott) Tu</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<!--outerWrapper start-->
+<div id="outerWrapper">
+
+
+<a name="Top" id="Top"></a>
+
+
+<!--fixedMenu start-->
+<div id="showMenuButton">
+
+<span class="line"></span>
+<span class="line"></span>
+<span class="line"></span>
+
+	<div id="fixedMenu">
+		<ul>
+		    <li><a href="#Top" >Top</a></li>
+			<li><a href="#Research Interests">Research Interests</a></li>
+			<li><a href="#Honors and Awards">Honors and Awards </a></li>			
+			<li><a href="#Publications">Publications</a></li>
+			<li><a href="#Patents">Patents</a></li>			
+			<li><a href="#Book Chapters">Book Chapters</a></li>						
+			<li><a href="#Teach">Teach Experience</a></li>
+			<li><a href="#Experience">Work Experience</a></li>			
+			<!--<li><a href="#Technical Skill">Technical Skills</a></li>-->
+			<li><a href="#Academic Activities">Academic Activities</a></li>
+			<li><a href="#Research">Research Experience</a></li>				
+		</ul>
+	</div>
+	
+</div>
+<!--fixedMenu end-->
+
+
+<!--header start -->
+<div id="headerMain">
+<!--
+<div id="header">
+  <h1>UCLA</h1>
+
+</div>-->
+<div id="navbar">
+<ul class="nav">
+<li><a class="selected" href="index.html">Home</a></li>
+<!-- <li><a href="project.htm">Projects</a></li> -->
+</ul>
+<ul class="ref">
+<li><a href="https://www.linkedin.com/pub/guan-hua-tu/57/245/b7b"><img src="mypics/linkedin.png"/>LinkedIn</a></li>
+<li><a href="https://www.facebook.com/guanhua.tu"><img src="mypics/fb.png"/> Facebook</a></li>
+</ul>
+</div>
+
+</div>
+<!--header end -->
+
+
+
+
+
+
+<!--bodyTopMain start -->
+<div id="bodyTopMain">
+<!--left1 start -->
+<div id="left1">
+<img src="mypics/Tu_GuanHua.JPG" height="160" />
+<a name="Guan-Hua" id="Guan-Hua"></a>
+<h2>Guan-Hua (Scott) Tu
+(CV <a class="ref" href="Guan-Hua-(Scott)-Tu_CV.pdf"></a>)</h2>
+<p>
+<b>Postdoctoral Scholar</b><br/>
+UCLA Computer Science Department<br/>
+4681 Boelter Hall<br/>
+Los Angeles, CA 90095-1596<br/>
+Email: ghtu AT cs.ucla.edu<br/>
+</p>
+
+
+</div>
+<!--left1 end -->
+
+</div>
+<!--bodyTopMain end -->
+
+
+
+
+
+
+<!--bodyTopMain end -->
+<!--bodyBotMain start -->
+<div id="bodyBotMain">
+
+
+<!--left2 start -->
+<div id="left2">
+
+
+<a name="Research" id="Research"></a>
+<h2>Research Experience</h2>
+<ul>
+	
+	<li><b>Accouting, Charging Issues, Security Attacks and Countermeasures on Mobile Data Networks [MOBICOM'12, CCS'12, MOBIYSY'13, CCS'14]</b>
+  </li>
+  <p>
+	The accounting of data usage is the most important functionality in the management plane of cellular network. 
+	However, we find that <u>the control-plane and management-plane functions of cellular network are not well designed from either charging accuracy or security aspect</u>.
+  </br></br>
+  In MOBICOM'12 and MOBISYS'13, our results yield three counter-intuitive findings: (1) <b>we are charged for what we never receive in extreme case</b>; 
+  (2) <b>we can obtain what we want in data access free of charge</b>; (3) <b>we pay for the packets dropped by cellular network during user mobility cross different systems</b>. 
+  We recognize that the fundamental problem is because, the 3G/4G standards design a centralized network-element-based the accounting architecture.  
+  When things go wrong outside the charging elements, the resulting data volume deviates from what is observed at end devices.
+</br></br>
+
+	In CCS'12 and CCS'14,  we discover several security vulnerabilities along improper coordination between control-plane and management-plane. 
+	First, the decoupling of authentication, authorization and accounting of data service gives a great opportunity to <b><u>attackers to send data packets which are spoofed with the fake source address</u></b>, 
+	and the accounting element further charge the victim instead of attacker. Second, <b><u>mobile device cannot request the network to stop the malicious spamming packets</u></b> have been accounted unless user tears down the bearer for all data services. 
+	We demonstrate that malicious attackers can incur any large traffic volume to the victim, while the victim may not be even aware of such spam traffic.
+</br></br>
+
+  Our contributions are to identify new security threat to cellular systems from the charging/accounting perspective and draw more people's attentions to this important topic. 
+  <font color="red"><b>Our research results have received several media reports including MIT review, Computer World, Fiscal Times, and TheVerge</b></font>. 
+  <b>Three major US operators adopt our approach to fix the free data service problem</b>. 
+  Our work also <b>stimulated several followup work</b> related to the charging/accounting from the research community, 
+which appeared in recent conferences of MOBICOM'13, IMC'14, CCS'14, NDSS'14, CCS'15, MOBICOM'15 and etc.</p>
+  
+    <ul class="subitem">
+  	<li><b>We pay for what we never get</b> (<u>User is overcharged while signal strength gets worse</u>)</li>
+  		<img src="mypics/mobicom12-overcharged.jpg" width="750" />
+  		<br>
+  		
+  		
+  	</li>	
+   	<li><b>We pay nothing for what we get</b> (<u>Carriers does not charge DNS traffic (UDP:53) towards Internet at all</u>)</li>
+  		<img src="mypics/mobicom12-free.jpg" width="750" />
+  	</li>	
+    	<!--<li>We pay for mobility (Pay for the packets dropped by carriers during mobility on 13 routes)</li>
+  		<img src="mypics/mobisys13-mobility.jpg" width="550" />-->
+	  <!--
+		<li><b>Media report</b> </li>
+			<a href="http://www.theverge.com/2012/9/20/3361904/wireless-data-carrier-overcharging-ucla-study">
+  		<img src="mypics/mobicom12-news.jpg" width="750" />
+  	</a>
+  	-->
+  	</li>	  		
+  	</li>	
+	</ul>
+ 
+
+  </ul>
+
+
+
+</div>
+<!--left2 end -->
+</div>
+<!--bodyBotMain end -->
+
+
+<!--footer start -->
+<div id="footerMain">
+  <div id="footer">
+    <p class="copyright">2015 &copy;Guan-Hua (Scott). All rights reserved.</p>
+  </div>
+  <div id="footernav">
+	<ul>
+	<li><a href="index.html#Top">Top</a></li>
+	<li><a href="https://www.linkedin.com/pub/guan-hua-tu/57/245/b7b">LinkedIn</a></li>
+	<li><a href="https://www.facebook.com/guanhua.tu">Facebook</a></li>
+	</ul>
+	
+  </div>
+</div>
+
+
+
+<!--footer end -->
+
+
+
+
+<!--outerWrapper end-->
+</div>
+
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=9830066; 
+var sc_invisible=0; 
+var sc_security="424cde23"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="web stats"
+href="http://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="http://c.statcounter.com/9830066/0/424cde23/0/"
+alt="web stats"></a></div></noscript>
+</body>
+</html>
