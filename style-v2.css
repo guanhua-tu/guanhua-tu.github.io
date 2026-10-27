@@ -318,3 +318,29 @@ a.ref{
 }
 
 
+
+
+/* Responsive adjustments: preserve desktop layout, adapt to smaller screens */
+*, *::before, *::after { box-sizing: border-box; }
+img { max-width: 100%; height: auto; }
+#outerWrapper { width: 90%; }
+@media screen and (max-width: 768px) {
+  body { font-size: 17px; line-height: 1.6; }
+  p { font-size: 1em; line-height: 1.6; }
+  #outerWrapper { width: 100%; max-width: none; }
+  #bodyTopMain, #bodyBotMain { padding: 16px; }
+  #left2 { margin: 0; }
+  #navbar { max-height: none; overflow: visible; }
+  #navbar ul.nav { display: flex; flex-wrap: wrap; gap: 4px 10px; padding: 8px 12px; }
+  #navbar ul.nav li { display: block; }
+  #navbar ul.nav li a { display: inline-block; padding: 4px 6px; line-height: 1.4; }
+  #left1 img { max-width: min(45%, 180px); height: auto; margin: 0 14px 10px 0; }
+  #left2 ul { padding-left: 1.4em; }
+  #footer { float: none; margin: 0; }
+  #footernav { display: block; margin: 0; }
+  #footernav ul { padding-left: 0; }
+  #footernav ul li a { padding-left: 0; }
+}
+@media screen and (max-width: 400px) {
+  #left1 img { float: none; display: block; max-width: 180px; margin: 0 0 12px; }
+}
