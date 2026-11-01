@@ -125,7 +125,7 @@ Office: 1124 Engineering Building<br/>
   The findings are counterintuitive: despite sufficient wireless coverage, emergency calls may take minutes to connect, fail, or drop, and can perform far worse than regular calls.
   For example, because 3GPP prohibits emergency calls over Wi-Fi whenever any cellular network is available, 90% of indoor emergency calls failed to reach PSAPs within two minutes at locations with weak cellular but good Wi-Fi signals, while non-emergency calls connected in just 5.85 seconds.
   Because subscribed phones must prioritize their home carrier for emergency services, paying subscribers may take over a minute to connect, while phones without a SIM card can use any carrier and connect in about four seconds.
-  We propose standards-compliant solutions, namely non-prioritized network selection, an emergency-aware NAS protocol, and unrestricted handover for call continuity, and our prototype reduces emergency call setup times from over a minute to about four seconds.
+  We propose standards-compliant solutions, namely non-prioritized network selection, an emergency-aware NAS protocol, and unrestricted handover for call continuity, and develop Emerg-Call-Dialer, a smartphone app that selects the best available network for emergency calls: when the home carrier's signal is weak but other carriers' signals are stronger, it disables the SIM/eSIM so that the phone can access nearby networks as an anonymous phone; when all cellular signals are weak but Wi-Fi is available, it places the emergency call over Wi-Fi to the local dispatch center. Evaluated on the Google Pixel 5 and Samsung S21, it reduces the average emergency call setup time from 65.8 to 4.23 seconds and from 108.6 to 3.54 seconds in these two scenarios, respectively.
   All experiments were conducted responsibly: no emergency call was ever delivered to a PSAP.
   </p>
 
@@ -145,7 +145,7 @@ Office: 1124 Engineering Building<br/>
   	<li><b>Network escalation forbidden during emergency calls</b> (<u>A call dropped due to a forbidden 3G-to-4G handover</u>)</li>
   		<img src="mypics/m911-call-drop.png" width="450" />
   		</br>
-  	<li><b>Proposed solution</b> (<u>Emergency call setup time with and without our solution</u>)</li>
+  	<li><b>Proposed solution: Emerg-Call-Dialer</b> (<u>Our app selects the best available network for emergency calls, reducing the average call setup time from 65.8 to 4.23 seconds when the home carrier's signal is poor but other carriers' signals are good, and from 108.6 to 3.54 seconds when all cellular signals are poor but Wi-Fi is good</u>)</li>
   		<img src="mypics/m911-solution.png" width="450" />
   		</br>
     </ul>
