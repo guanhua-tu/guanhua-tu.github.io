@@ -126,7 +126,7 @@ Office: 1124 Engineering Building<br/>
   By exploiting them, we devise two proof-of-concept attacks, data spamming and text spamming. An adversary can raise an IoT data bill by up to $226 with less than 120 MB of spam traffic and increase an IoT text bill at a rate of $5 per second; when auto-renewal is disabled, IoT devices may even suffer from denial of IoT service.
   We finally propose a suite of standard-compliant solutions, including PSM-aware charging and a privacy-aware voice service, and confirm their effectiveness through a prototype and evaluation.
   </br></br>
-  We reported the vulnerabilities and our recommended solutions to the affected carriers.
+  We reported the vulnerabilities to the affected cellular IoT carriers and provided them with recommended solutions. One carrier confirmed the vulnerabilities and has been developing remedies, another acknowledged the vulnerabilities and has been investigating them, and the third had not yet responded at the time of publication.
   </p>
 
     <ul class="subitem">
@@ -139,7 +139,7 @@ Office: 1124 Engineering Building<br/>
   	<li><b>Identifying IoT phone numbers from VoLTE signaling</b> (<u>VoLTE call flows differ for IoT and non-IoT phone numbers</u>)</li>
   		<img src="mypics/ciot-volte-call-flow.png" width="500" />
   		<br>
-  	<li><b>PSM-aware charging</b> (<u>Spam packets are blocked at the P-GW while IoT devices sleep</u>)</li>
+  	<li><b>Proposed solution: PSM-aware charging</b> (<u>The P-GW stops forwarding and charging incoming packets for sleeping IoT devices, so spam packets are blocked</u>)</li>
   		<img src="mypics/ciot-psm-aware-charging.png" width="500" />
   		<br>
     </ul>
