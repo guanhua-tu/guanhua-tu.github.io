@@ -1,0 +1,208 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Guan-Hua Tu</title>
+<link href="style-v2.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<!--outerWrapper start-->
+<div id="outerWrapper">
+
+
+<a name="Top" id="Top"></a>
+
+
+<!--fixedMenu 
+<div id="showMenuButton">
+
+<span class="line"></span>
+<span class="line"></span>
+<span class="line"></span>
+
+	<div id="fixedMenu">
+		<ul>
+		    <li><a href="#Top" >Top</a></li>
+
+			<li><a href="#Publications">Publications</a></li>
+			<li><a href="#Patents">Patents</a></li>			
+			<li><a href="#Book Chapters">Book Chapters</a></li>			
+			<li><a href="#Research">Research Projects</a></li>							
+			<li><a href="#Teach">Teaching</a></li>
+			<li><a href="#Academic Activities">Academic Activities</a></li>
+			<li><a href="#Honors and Awards">Honors and Awards </a></li>						
+
+		</ul>
+	</div>
+	
+</div>
+fixedMenu end-->
+
+
+
+<!--header start -->
+<div id="headerMain">
+<!--
+<div id="header">
+  <h1>UCLA</h1>
+
+</div>-->
+<div id="navbar">
+<ul class="nav">
+<li><a class="selected" href="index.html">Home</a></li>
+<li><a class="selected" href="publications.html">Publications</a></li>
+<li><a class="selected" href="research-projects-v2.html">Research</a></li>
+<li><a class="selected" href="service.htm">Professional activities </a></li>
+<li><a class="selected" href="teach.html">Teaching </a></li>
+<li><a class="selected" href="members.html">People@SNMS </a></li>
+</ul>
+</div>
+
+</div>
+<!--header end -->
+
+
+
+
+
+
+<!--bodyTopMain start -->
+<div id="bodyTopMain">
+<!--left1 start -->
+<div id="left1">
+<img src="mypics/Tu_GuanHua_2.jpg" height="220" />
+<a name="Guan-Hua" id="Guan-Hua"></a>
+<h2>Guan-Hua (Scott) Tu </h2>
+Associate Professor
+<p>
+<!--<b>Postdoctoral Scholar</b><br/> -->
+<a href="http://www.cse.msu.edu">Department of Computer Science and Engineering</a>,<br/>
+<a href="http://www.msu.edu">Michigan State University</a><br/>
+428 S SHAW LN, ROOM 3115<br/>
+East Lansing, MI 48824-1266<br/>
+Email: ghtu AT msu.edu<br/>
+Office: 1124 Engineering Building<br/>
+<!--My <a href="cv.pdf">CV</a>!-->
+</p>
+
+
+
+
+</div>
+<!--left1 end -->
+
+</div>
+<!--bodyTopMain end -->
+
+
+
+
+
+
+<!--bodyTopMain end -->
+<!--bodyBotMain start -->
+<div id="bodyBotMain">
+
+
+<!--left2 start -->
+<div id="left2">
+
+
+<a name="Research" id="Research"></a>
+<h2>Lost/Stolen Phone Reporting Service Security</h2>
+<ul>
+  <li><b>Insecurity of Lost/Stolen Phone Reporting Services: Vulnerabilities, Attacks, and Countermeasures</b> [MobiSys'26, <font color="red">Best Paper Award</font>; <font color="red">ACM GetMobile Research Highlights 2026</font>] (<a href="https://dl.acm.org/doi/10.1145/3745756.3809220">Paper</a>)
+  </li>
+  <p>
+  The problem of stolen or lost mobile phones has grown increasingly severe: a 2025 GSMA report estimates that about 1% of active subscriptions each year involve stolen phones, totaling millions of devices and $10.8 billion in annual losses.
+  To mitigate this risk, over 800 operators worldwide offer lost/stolen phone reporting services, which blacklist the IMEIs (International Mobile Equipment Identities) of reported devices in their Equipment Identity Registers (EIRs) and share them with other operators through the GSMA Central EIR (CEIR).
+  However, unlike houses or vehicles, phones have no formal proof of ownership, and IMEIs are often absent from purchase receipts.
+  Carriers and 3GPP therefore rely on three pragmatic safeguards: only subscribed users may submit reports, 3GPP mandates that devices never transmit their IMEIs in plaintext before NAS security is activated, and carriers verify ownership by device activity, such as historical usage. Are these safeguards sufficient? Unfortunately, our study yields a negative answer.
+  </br></br>
+  Prior work asked how thieves could evade blocking; we asked the opposite question: can these services be weaponized to block devices that were never lost or stolen?
+  Through an extensive experimental study across three major U.S. carriers and diverse mobile devices, we discover six new vulnerabilities spanning the device, carrier, and cross-carrier domains:
+  weak integrity checks on identity request messages lead some devices to disclose their IMEIs (V1); reporter identity verification is required but absent (V2); usage-based device ownership verification is insufficient (V3); reporting systems accept IMEIs beyond the subscriber's service entitlements (V4); GSMA CEIR participation is not mandatory (V5); and blacklist records synchronized across carriers carry no security metadata, such as whether the reporter's identity was verified (V6).
+  Together, they enable attackers to arbitrarily block cellular devices from accessing carrier networks.
+  </br></br>
+  By exploiting them, we devise two practical denial-of-service attacks, both validated on operational 5G/4G networks.
+  (1) Home Security System Freezing (secFreezing) harvests the IMEI of a cellular-based home security gateway with a rogue base station and then reports it as lost, disabling the gateway and blocking critical alarms from reaching both homeowners and security service centers. The vulnerable cellular IoT modems come from two chipset vendors holding over 40% of the global cellular IoT modem market, so the threat extends to medical monitors, utility meters, and industrial sensors.
+  (2) Zero-Day Flagship Phone Ambush (flagAmbush) obtains the IMEIs of unreleased flagship phones, such as the Samsung Galaxy Z Fold 7, through GSMA industry members and reports them as lost, so that brand-new phones are blocked from mobile services immediately upon debut.
+  We finally propose practical, backward-compatible countermeasures and evaluate their effectiveness on a prototype.
+  </br></br>
+  We responsibly disclosed our findings to the affected parties, including carriers, chipset vendors, and device manufacturers. GSMA acknowledged the significance of these security issues and the proposed remedies, and engaged its Device Security Group to determine appropriate actions.
+  </p>
+  <ul class="subitem">
+  	<li>End-to-end lost/stolen device reporting ecosystem across device, carrier, and cross-carrier domains, with vulnerabilities (V1&ndash;V6) shown at their exposure points</li>
+  		<img src="mypics/lost-stolen-ecosystem.png" alt="Lost/stolen device reporting ecosystem" width="750" />
+  		</br>
+  	<li><b>Home Security System Freezing (secFreezing) attack</b>: an attacker harvests the IMEI of a home security gateway with a rogue base station, then jams the gateway's Wi-Fi and reports the harvested IMEI as lost</li>
+  		<img src="mypics/lost-stolen-secfreezing.png" alt="secFreezing attack" width="500" />
+  		</br>
+  	<li><b>Zero-Day Flagship Phone Ambush (flagAmbush) attack</b>: an attacker obtains the IMEIs of unreleased flagship phones and reports them as lost before they are sold</li>
+  		<img src="mypics/lost-stolen-flagambush.png" alt="flagAmbush attack" width="500" />
+  		</br>
+  	<li>A brand-new Samsung Galaxy Z Fold 7 is blocked after unboxing due to the flagAmbush attack</li>
+  		<img src="mypics/lost-stolen-fold7-blocked.png" alt="Blocked Samsung Galaxy Z Fold 7" width="500" />
+  		</br>
+  	<li><a href="mypics/MobiSys26-Best-Paper-Award.png"><b>MobiSys'26 Best Paper Award</b></a></li>
+  		</br>
+  	<li><b>Media report</b></li>
+  		<ul>
+  			<li>eSecurity Planet: <a href="https://www.esecurityplanet.com/threats/news-stolen-phone-blacklist-imei-security-flaws/">Researchers Found a Way to Blacklist Phones That Were Never Stolen</a> (Sep. 2026)</li>
+  			<li>Help Net Security: <a href="https://www.helpnetsecurity.com/2026/09/11/cellular-network-lost-phone-reporting/">Getting a stranger's phone kicked off the cellular network costs a few dollars</a> (Sep. 2026)</li>
+  			<li>Tech Xplore: <a href="https://techxplore.com/news/2026-09-stolen-safeguard-disrupt-home-alarms.html">A stolen-phone safeguard could disrupt home alarms and block new flagship phones</a> (Sep. 2026)</li>
+  			<li>EurekAlert!: <a href="https://www.eurekalert.org/news-releases/1143336">Uncovering security flaws that could remotely block mobile devices from cellular networks</a> (Sep. 2026)</li>
+  			<li>MSU Today: <a href="https://msutoday.msu.edu/news/2026/09/security-flaws-could-block-devices-from-network">Security flaws could block devices from cellular networks</a> (Sep. 2026)</li>
+  		</ul>
+  </ul>
+</ul>
+
+
+</div>
+<!--left2 end -->
+</div>
+<!--bodyBotMain end -->
+
+
+<!--footer start -->
+<div id="footerMain">
+  <div id="footer">
+    <p class="copyright">2015 &copy;Guan-Hua (Scott). All rights reserved.</p>
+  </div>
+  <div id="footernav">
+	<ul>
+	<li><a href="research-projects-v2.html">Top</a></li>
+	</ul>
+	
+  </div>
+</div>
+
+
+
+<!--footer end -->
+
+
+
+
+<!--outerWrapper end-->
+</div>
+
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=11085300; 
+var sc_invisible=0; 
+var sc_security="02412e52"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="create counter"
+href="http://statcounter.com/free-hit-counter/"
+target="_blank"><img class="statcounter"
+src="//c.statcounter.com/11085300/0/02412e52/0/" alt="create
+counter"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+</body>
+</html>
